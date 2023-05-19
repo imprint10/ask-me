@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class GrsConfig(AppConfig):
+class ApiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'grs'
+    name = 'api'
