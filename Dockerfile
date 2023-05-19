@@ -9,6 +9,9 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
+# OpenAI API key
+ENV OPENAI_API_KEY="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"
+
 # Install pip requirements
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
