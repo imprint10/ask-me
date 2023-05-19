@@ -10,4 +10,3 @@ def ask_me(request):
     output = index.query(query)
     print(output)
     return render(request, 'askme.html', {})
-

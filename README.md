@@ -1,6 +1,6 @@
 # ask-me
 
-
+pip install pipreqs
 python -m  pipreqs.pipreqs
 
 docker-compose up --build
