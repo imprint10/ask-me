@@ -4,7 +4,7 @@ from langchain.indexes import VectorstoreIndexCreator
 
 def ask_me(request):
     #query = request.POST.get('prompt')
-    loader = TextLoader('C:/Users/impab/OneDrive/Desktop/GAIA hakthon/ask-me/data/grape.txt')
+    loader = TextLoader('data/grape.txt')
     index = VectorstoreIndexCreator().from_loaders([loader])
     query = "ايش اقدر ارزع في شهر اكتوبر؟"
     output = index.query(query)
