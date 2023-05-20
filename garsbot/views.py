@@ -6,6 +6,7 @@ from langchain.indexes import VectorstoreIndexCreator
 from django.conf import settings
 import os
 
+
 def get_answer(query):
     data_file_path = os.path.join(settings.BASE_DIR, 'garsbot', 'data', 'grape.txt')
     loader = TextLoader(data_file_path, encoding='utf-8')
