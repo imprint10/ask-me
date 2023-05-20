@@ -19,7 +19,6 @@ def ask_garsbot(request):
         form = AskGarsbotForm(request.POST)
         if form.is_valid():
             question = form.cleaned_data['question']
-            # your function goes here, make sure to replace it with your actual function
             answer = get_answer(question)
             return render(request, 'garsbot/answer.html', {'answer': answer})
     else:
