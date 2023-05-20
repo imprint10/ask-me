@@ -1,0 +1,14 @@
+<!-- ask.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Garsbot</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Ask Garsbot</button>
+    </form>
+</body>
+</html>
